@@ -1,2 +1,1 @@
-# iamena_drupal
-# iamena_drupal
+#A Trial run of Drupal through recreating iamena.
