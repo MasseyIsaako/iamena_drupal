@@ -1,0 +1,21 @@
+{% include directory ~ "/partials/header.html.twig" %}
+
+	<div class="layout-container">
+		<div id="main-image-container">
+			<div id="main-overlay">
+				<h1 class="heading">Hello</h1>r
+			</div>
+		</div>
+
+		<main role="main">
+			<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+			<div class="layout-content">
+				{{ page.content }}
+			</div>{# /.layout-content #}
+
+		</main>
+
+	</div>{# /.layout-container #}
+
+{% include directory ~ "/partials/footer.html.twig" %}

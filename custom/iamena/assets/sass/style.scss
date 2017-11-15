@@ -9,6 +9,7 @@ html, body{
 	margin:0px;
 	padding:0px;
 	background-color:$lightOlive;
+	overflow-x:hidden;
 }
 
 *{
@@ -33,12 +34,17 @@ html, body{
 	font-size:24px;
 }
 
+.subheading{
+	font-family:'Oxygen', sans-serif;
+	font-size:16px;
+}
+
 // Navigation and Branding
 #branding-container{
 	display:flex;
 	justify-content:center !important;
 	width:$full;
-	padding:10px;
+	height:auto;
 
 	img{
 		height:60px;
@@ -49,4 +55,15 @@ html, body{
 	display:flex;
 	justify-content:space-evenly;
 	padding:10px;
+	height:auto;
+}
+
+// Front Page
+#main-image-container{
+	@include backgroundSettings;
+	display:block;
+	position:relative;
+	background-image: url("../../assets/images/kees-streefkerk-352781.jpg");
+	width:100vw;
+	height:90vh;
 }
