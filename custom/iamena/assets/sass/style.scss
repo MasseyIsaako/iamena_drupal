@@ -17,7 +17,6 @@ html, body{
 	list-style-type:none;
 	text-decoration:none;
 	font-family:'Exo', sans-serif;
-	// font-family:'Lora', serif;
 }
 
 // Styling Text Using Classes
@@ -31,12 +30,12 @@ html, body{
 
 .heading{
 	font-family:'Exo', sans-serif;
-	font-size:24px;
+	font-size:18pt;
 }
 
 .subheading{
-	font-family:'Oxygen', sans-serif;
-	font-size:16px;
+	font-family:'Exo', sans-serif;
+	font-size:14pt;
 }
 
 // Navigation and Branding
@@ -66,4 +65,77 @@ html, body{
 	background-image: url("../../assets/images/kees-streefkerk-352781.jpg");
 	width:100vw;
 	height:90vh;
+
+	#main-overlay{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		width:100vw;
+		height:$full;
+		background-color:rgba(0, 0, 0, 0.55);
+
+		.subheading{
+			color:white;
+			text-align:center;
+			padding:0px 150px;
+			font-family:'Lora', serif;
+			font-size:12pt;
+		}
+	}
+}
+
+#frontpage-content-layout{
+	width:80%;
+	margin:10px 10%;
+}
+
+.views-row{
+	width:80%;
+	margin:10px 10%;
+	padding:5px 20px;
+	background-color:white;
+	display:flex;
+	flex-direction:row;
+	align-items:center !important;
+	justify-content:center;
+}
+
+.contextual-region{width:$full;}
+
+.layout-content{
+	display:flex;
+	flex-direction:row;
+	align-items:center !important;
+
+	.frontpage-heading{
+		text-align:center;
+		a:hover{text-decoration:underline;}
+	}
+
+	.views-field{
+		width:80% !important;
+
+		.frontpage-image{
+			position:relative;
+			height:auto;
+		}
+	}
+
+	.field-content{
+		padding:5px 10px;
+		text-align:center;
+		font-size:12pt;
+	}
+}
+
+.views-field-field-featured-image{
+	display:flex;
+
+	img{
+		align-self:center !important;
+	}
+}
+
+.quickedit-field{
+	text-align:center;
 }
