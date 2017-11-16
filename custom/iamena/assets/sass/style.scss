@@ -100,7 +100,13 @@ html, body{
 	justify-content:center;
 }
 
-.contextual-region{width:$full;}
+.contextual-region{
+	display:flex;
+	width:$full;
+	flex-direction:column;
+	justify-content:space-evenly;
+	text-align:center;
+}
 
 .layout-content{
 	display:flex;
